@@ -6,7 +6,7 @@ Você está desenvolvendo um sistema de gerenciamento de veículos para uma empr
 
 ## 1. Classe Abstrata Veiculo
 
-Crie uma classe abstrata chamada `Veiculo`, que servirá como base para todos os tipos de veículos no sistema.
+Crie uma classe abstrata chamada Veiculo, que servirá como base para todos os tipos de veículos no sistema.
 
 ### Atributos
 - `marca`  
@@ -27,7 +27,7 @@ Crie uma classe abstrata chamada `Veiculo`, que servirá como base para todos os
 
 ## 2. Subclasses de Veiculo
 
-Crie três classes que herdam de `Veiculo`:
+Crie três classes que herdam de Veiculo:
 
 ### a. Carro  
 ### b. Caminhao  
@@ -37,16 +37,16 @@ Crie três classes que herdam de `Veiculo`:
 
 ## 3. Detalhamento das Subclasses
 
-Cada classe deve adicionar um **atributo próprio** e sobrescrever o método `calcularAutonomia()` conforme as regras abaixo:
+Cada classe deve adicionar um **atributo próprio** e sobrescrever o método calcularAutonomia() conforme as regras abaixo:
 
 ### a. Carro
-- **Atributo Adicional**: `tipoCarro` (sedan, hatch, SUV)  
+- **Atributo Adicional**: tipoCarro (sedan, hatch, SUV)  
 - **Autonomia**:  
   - Tanque de **50 litros**  
   - Consumo de **12 km/L**  
 
 ### b. Caminhao
-- **Atributo Adicional**: `capacidadeCarga` (em toneladas)  
+- **Atributo Adicional**: capacidadeCarga (em toneladas)  
 - **Autonomia**:  
   - Tanque de **300 litros**  
   - Consumo base de **6 km/L**  
@@ -55,7 +55,7 @@ Cada classe deve adicionar um **atributo próprio** e sobrescrever o método `ca
     - Exemplo: Um caminhão com 5 toneladas terá consumo de **5,7 km/L** (redução de 5%).  
 
 ### c. Onibus
-- **Atributo Adicional**: `quantidadeEixos`  
+- **Atributo Adicional**: quantidadeEixos 
 - **Autonomia**:  
   - Tanque de **200 litros**  
   - Consumo de **5 km/L**  
@@ -69,12 +69,12 @@ Cada classe deve adicionar um **atributo próprio** e sobrescrever o método `ca
 Crie duas subclasses adicionais que especializam os veículos existentes:
 
 ### a. CarroEletrico (herda de Carro)
-- **Atributo Adicional**: `bateriaKWh`  
+- **Atributo Adicional**: bateriaKWh  
 - **Autonomia**:  
-  - Redefine `calcularAutonomia()` para usar um consumo de **5 km por kWh**.
+  - Redefine calcularAutonomia() para usar um consumo de **5 km por kWh**.
 
 ### b. CaminhaoRefrigerado (herda de Caminhao)
-- **Atributo Adicional**: `temperaturaMinima`  
+- **Atributo Adicional**: temperaturaMinima 
 - **Autonomia**:  
   - Reduz a autonomia em **10%** devido ao sistema de refrigeração.
 
@@ -82,4 +82,4 @@ Crie duas subclasses adicionais que especializam os veículos existentes:
 
 ## 5. Classe Main
 
-Crie uma classe `Main` para testar todas as implementações acima. Certifique-se de instanciar objetos de cada classe e demonstrar o funcionamento dos métodos `calcularAutonomia()` e `exibirDetalhes()`.
+Crie uma classe Main para testar todas as implementações acima. Certifique-se de instanciar objetos de cada classe e demonstrar o funcionamento dos métodos calcularAutonomia() e exibirDetalhes().
